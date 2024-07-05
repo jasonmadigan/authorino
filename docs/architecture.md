@@ -314,7 +314,7 @@ JSON signature verification certificates linked by discovered OpenID Connect con
 
 <table>
   <tr>
-    <td><small>Not implemented - In analysis (<a href="https://github.com/kuadrant/authorino/issues/19">#19</a>)</small></td>
+    <td><small>Not implemented - In analysis ([#19](https://github.com/kuadrant/authorino/issues/19))</small></td>
   </tr>
 </table>
 
@@ -324,7 +324,7 @@ Caching of access tokens identified and or notified as revoked prior to expirati
 
 <table>
   <tr>
-    <td><small>Not implemented - Planned (<a href="https://github.com/kuadrant/authorino/issues/21">#21</a>)</small></td>
+    <td><small>Not implemented - Planned ([#21](https://github.com/kuadrant/authorino/issues/21))</small></td>
   </tr>
 </table>
 
@@ -340,7 +340,7 @@ Precompiled and cached individual Rego policies originally pulled by Authorino f
 
 <table>
   <tr>
-    <td><small>Not implemented - In analysis (<a href="https://github.com/kuadrant/authorino/issues/20">#20</a>)</small></td>
+    <td><small>Not implemented - In analysis ([#20](https://github.com/kuadrant/authorino/issues/20))</small></td>
   </tr>
 </table>
 
@@ -383,7 +383,7 @@ The table below describes the roles and role bindings defined by the Authorino s
 | `authorino-proxy-role`             | `ClusterRole` |   C/N    | Kube-rbac-proxy-role (sidecar)'s role | Create `TokenReview`s and `SubjectAccessReview`s to check permissions to the `/metrics` endpoint |
 | `authorino-metrics-reader`         | `ClusterRole` |    -     | Metrics reader                        | `GET /metrics`                                                                                   |
 
-<small>(*) C - Cluster-wide | N - Authorino namespace | C/N - Cluster-wide or Authorino namespace (depending on the <a href="#cluster-wide-vs-namespaced-instances">deployment mode</a>).</small>
+<small>(*) C - Cluster-wide | N - Authorino namespace | C/N - Cluster-wide or Authorino namespace (depending on the [deployment mode](#cluster-wide-vs-namespaced-instances)).</small>
 
 ## Observability
 

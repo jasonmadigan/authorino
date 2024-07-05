@@ -9,7 +9,7 @@ Overriding the host attribute of the HTTP request can be useful to support use c
     <tr>
       <td>
         <b>⚠️ <i>Important:</i></b>
-        This feature may not be available to users of Authorino via <a href="https://kuadrant.io">Kuadrant</a>.
+        This feature may not be available to users of Authorino via [Kuadrant](https://kuadrant.io).
       </td>
     </tr>
   </tbody>

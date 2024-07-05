@@ -10,15 +10,15 @@ This user guide provides an example of using Authorino as a Kubernetes Validatin
   <summary>
     <strong>Authorino capabilities featured in this guide:</strong>
     <ul>
-      <li>Identity verification & authentication → <a href="../features.md#plain-authenticationplain">Plain</a></li>
-      <li>Identity verification & authentication → <a href="../features.md#kubernetes-tokenreview-authenticationkubernetestokenreview">Kubernetes TokenReview</a></li>
-      <li>Identity verification & authentication → <a href="../features.md#api-key-authenticationapikey">API key</a></li>
-      <li>External auth metadata → <a href="../features.md#http-getget-by-post-metadatahttp">HTTP GET/GET-by-POST</a></li>
-      <li>Authorization → <a href="../features.md#kubernetes-subjectaccessreview-authorizationkubernetessubjectaccessreview">Kubernetes SubjectAccessReview</a></li>
-      <li>Authorization → <a href="../features.md#open-policy-agent-opa-rego-policies-authorizationopa">Open Policy Agent (OPA) Rego policies</a></li>
-      <li>Dynamic response → <a href="../features.md#festival-wristband-tokens-responsesuccessheadersdynamicmetadatawristband">Festival Wristband tokens</a></li>
-      <li>Common feature → <a href="../features.md#common-feature-conditions-when">Conditions</a></li>
-      <li>Common feature → <a href="../features.md#common-feature-priorities">Priorities</a></li>
+      <li>Identity verification & authentication → [Plain](../features.md#plain-authenticationplain)</li>
+      <li>Identity verification & authentication → [Kubernetes TokenReview](../features.md#kubernetes-tokenreview-authenticationkubernetestokenreview)</li>
+      <li>Identity verification & authentication → [API key](../features.md#api-key-authenticationapikey)</li>
+      <li>External auth metadata → [HTTP GET/GET-by-POST](../features.md#http-getget-by-post-metadatahttp)</li>
+      <li>Authorization → [Kubernetes SubjectAccessReview](../features.md#kubernetes-subjectaccessreview-authorizationkubernetessubjectaccessreview)</li>
+      <li>Authorization → [Open Policy Agent (OPA) Rego policies](../features.md#open-policy-agent-opa-rego-policies-authorizationopa)</li>
+      <li>Dynamic response → [Festival Wristband tokens](../features.md#festival-wristband-tokens-responsesuccessheadersdynamicmetadatawristband)</li>
+      <li>Common feature → [Conditions](../features.md#common-feature-conditions-when)</li>
+      <li>Common feature → [Priorities](../features.md#common-feature-priorities)</li>
     </ul>
   </summary>
 
@@ -60,9 +60,9 @@ The next steps walk you through installing Authorino, deploying and configuring 
   <tbody>
     <tr>
       <td>
-        <p>If you are a user of <a href="https://kuadrant.io">Kuadrant</a> you may already have Authorino installed and running. In this case, skip straight to step ❸.</p>
+        <p>If you are a user of [Kuadrant](https://kuadrant.io) you may already have Authorino installed and running. In this case, skip straight to step ❸.</p>
         <p>At step ❺, alternatively to creating an <code>AuthConfig</code> custom resource, you may create a Kuadrant <a href="https://docs.kuadrant.io/kuadrant-operator/doc/reference/authpolicy"><code>AuthPolicy</code></a> one. The schema of the AuthConfig's <code>spec</code> matches the one of the AuthPolicy's, except <code>spec.host</code>, which is not available in the Kuadrant AuthPolicy. Host names in a Kuadrant AuthPolicy are inferred automatically from the Kubernetes network object referred in <code>spec.targetRef</code> and route selectors declared in the policy.</p>
-        <p>For more about using Kuadrant to enforce authorization, check out <a href="https://docs.kuadrant.io/kuadrant-operator/doc/auth">Kuadrant auth</a>.</p>
+        <p>For more about using Kuadrant to enforce authorization, check out [Kuadrant auth](https://docs.kuadrant.io/kuadrant-operator/doc/auth).</p>
       </td>
     </tr>
   </tbody>
@@ -265,7 +265,7 @@ kubectl create namespace myapp
       <td>
         <b><i>Kuadrant users –</i></b>
         For this and other example AuthConfigs below, if you create a Kuadrant <a href="https://docs.kuadrant.io/kuadrant-operator/doc/reference/authpolicy"><code>AuthPolicy</code></a> instead, the output of the commands shall differ. The requested AuthPolicy may be initially accepted, but its state will turn ready or not ready depending on whether the corresponding AuthConfig requested by Kuadrant is accepted or rejected, according to the validating webhook rules. Check the state of the resources to confirm.
-        For more, see <a href="https://docs.kuadrant.io/kuadrant-operator/doc/auth">Kuadrant auth</a>.
+        For more, see [Kuadrant auth](https://docs.kuadrant.io/kuadrant-operator/doc/auth).
       </td>
     </tr>
   </tbody>

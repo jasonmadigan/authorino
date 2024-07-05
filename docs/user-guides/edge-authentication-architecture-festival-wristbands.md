@@ -14,10 +14,10 @@ As a minimum, EAA allows to simplify authentication between applications and mic
   <summary>
     <strong>Authorino capabilities featured in this guide:</strong>
     <ul>
-      <li>Dynamic response → <a href="../features.md#festival-wristband-tokens-responsesuccessheadersdynamicmetadatawristband">Festival Wristband tokens</a></li>
-      <li>Identity verification & authentication → <a href="../features.md#extra-identity-extension-authenticationdefaults-and-authenticationoverrides">Identity extension</a></li>
-      <li>Identity verification & authentication → <a href="../features.md#api-key-authenticationapikey">API key</a></li>
-      <li>Identity verification & authentication → <a href="../features.md#jwt-verification-authenticationjwt">JWT verification</a></li>
+      <li>Dynamic response → [Festival Wristband tokens](../features.md#festival-wristband-tokens-responsesuccessheadersdynamicmetadatawristband)</li>
+      <li>Identity verification & authentication → [Identity extension](../features.md#extra-identity-extension-authenticationdefaults-and-authenticationoverrides)</li>
+      <li>Identity verification & authentication → [API key](../features.md#api-key-authenticationapikey)</li>
+      <li>Identity verification & authentication → [JWT verification](../features.md#jwt-verification-authenticationjwt)</li>
     </ul>
   </summary>
 
@@ -65,9 +65,9 @@ The first environment is a facade for handling the first layer of authentication
   <tbody>
     <tr>
       <td>
-        <p>If you are a user of <a href="https://kuadrant.io">Kuadrant</a> and already have your workload cluster configured and sample service application deployed, as well as your Gateway API network resources applied to route traffic to your service, skip straight to step ❹.</p>
+        <p>If you are a user of [Kuadrant](https://kuadrant.io) and already have your workload cluster configured and sample service application deployed, as well as your Gateway API network resources applied to route traffic to your service, skip straight to step ❹.</p>
         <p>At steps ❹ and ❺, instead of creating an <code>AuthConfig</code> custom resource, create a Kuadrant <a href="https://docs.kuadrant.io/kuadrant-operator/doc/reference/authpolicy"><code>AuthPolicy</code></a> one. The schema of the AuthConfig's <code>spec</code> matches the one of the AuthPolicy's, except <code>spec.host</code>, which is not available in the Kuadrant AuthPolicy. Host names in a Kuadrant AuthPolicy are inferred automatically from the Kubernetes network object referred in <code>spec.targetRef</code> and route selectors declared in the policy.</p>
-        <p>For more about using Kuadrant to enforce authorization, check out <a href="https://docs.kuadrant.io/kuadrant-operator/doc/auth">Kuadrant auth</a>.</p>
+        <p>For more about using Kuadrant to enforce authorization, check out [Kuadrant auth](https://docs.kuadrant.io/kuadrant-operator/doc/auth).</p>
       </td>
     </tr>
   </tbody>
@@ -165,7 +165,7 @@ Create the config:
       <td>
         <b><i>Kuadrant users –</i></b>
         Remember to create an <a href="https://docs.kuadrant.io/kuadrant-operator/doc/reference/authpolicy"><code>AuthPolicy</code></a> instead of an AuthConfig.
-        For more, see <a href="https://docs.kuadrant.io/kuadrant-operator/doc/auth">Kuadrant auth</a>.
+        For more, see [Kuadrant auth](https://docs.kuadrant.io/kuadrant-operator/doc/auth).
       </td>
     </tr>
   </tbody>
@@ -247,7 +247,7 @@ kubectl -n internal port-forward deployment/envoy 8000:8000 2>&1 >/dev/null &
       <td>
         <b><i>Kuadrant users –</i></b>
         Remember to create an <a href="https://docs.kuadrant.io/kuadrant-operator/doc/reference/authpolicy"><code>AuthPolicy</code></a> instead of an AuthConfig.
-        For more, see <a href="https://docs.kuadrant.io/kuadrant-operator/doc/auth">Kuadrant auth</a>.
+        For more, see [Kuadrant auth](https://docs.kuadrant.io/kuadrant-operator/doc/auth).
       </td>
     </tr>
   </tbody>
